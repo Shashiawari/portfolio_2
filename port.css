@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+ background-position: center;
+ background-color: rgba(20, 21, 40, 1);
+ border: 0;
+}
+.nav-link{
+    color:white;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+.nav-link:hover{
+
+    color: white;
+    background: linear-gradient(to right, #B14B4B, 
+    #A62C90, #9700F4); 
+    border-radius: 20px;
+    text-shadow: black;
+
+
+
+}
+body svg{
+    position: absolute;
+}
+
+.d{
+    width: 100%;
+}
+.checkboxtoggler {
+    padding: 10PX;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .line-1 {
+    background: #f3f3f3ef;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  .line-2 {
+    background: #f2f2f3;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  .line-3 {
+    background: #fefbff;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  #toggleChecker {
+    height: 2em;
+    width: 100%;
+    display: none;
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-1 {
+    -webkit-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+    -ms-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+    transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-2 {
+    -webkit-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+    -ms-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+    transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-3 {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+.navbar-brand{
+    font-family: Sacramento;
+    font-size: 40px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.multitext{
+    background: linear-gradient(to right, #B14B4B, 
+                    #A62C90, #9700F4); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+ 
+}
+#s1{
+    top: 0;
+    left: 70%;
+    position: fixed;
+}
+
+#s2{
+    bottom: 10%;
+}
+#s3{
+    left: 0;
+}
+#s4{
+    bottom: 10%;
+    left: 80%;
+    top: 70%;
+}
+#s1{
+    animation-name: identifier;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+#s2{
+    animation-name: identifier3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
+#s4{
+    animation-name: identifier4;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes identifier {
+
+    100%{
+        transform: rotate(460deg);
+    }
+}
+
+@keyframes identifier2 {
+
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes identifier3 {
+
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes identifier4 {
+
+    100%{
+      transform: rotate(460deg);
+    }
+  }
+.containerb{
+    position: relative;
+    -webkit-box-shadow: 1px 1px 21px 11px rgba(0,0,0,0.69); 
+    box-shadow: 1px 1px 21px 11px rgba(0,0,0,0.69);
+    padding: auto;
+    background-color: rgba(0, 0, 0, 0.452);
+    height: 70%;
+    backdrop-filter: blur(6px);
+    border-radius: 40px;
+    width: 90%;
+    overflow: scroll;
+  
+}
+.containerb::-webkit-scrollbar {
+    display: none;
+  }
+.ic{
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+   
+}
+.fa-brands{
+    font-size: 25px;
+    padding: 15px;
+}
+#hello{
+    color: wheat;
+    font-family: Josefin Slab;
+    letter-spacing: 2px;
+}
+#port{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Josefin Slab;
+    color: white;
+}
+
+#click{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 30px 5px 30px ;
+    color: white;
+    transition: all 0.3s;
+    font-family: josefin slab;
+    background: rgb(84,29,147);
+    background: linear-gradient(322deg, rgba(84,29,147,0.896796218487395) 0%, rgba(129,32,189,1) 35%, rgba(141,0,255,1) 100%);
+}
+
+#click:hover{
+    background: rgb(128,98,163);
+background: linear-gradient(140deg, rgba(128,98,163,0.896796218487395) 0%, rgba(129,32,189,1) 35%, rgba(141,0,255,1) 100%);
+
+}
+.fa-instagram{
+    padding: 9px;
+    transition: all 0.3s;
+}
+.fa-instagram:hover{
+    border-radius: 10px;
+    background-color: #c4c1c457;
+}
+.fa-github{
+    padding: 9px;
+    transition: all 0.3s;
+}
+.fa-github:hover{
+    border-radius: 10px;
+    background-color: #c4c1c457;
+}
+.fa-facebook{
+    padding: 9px;
+    transition: all 0.3s;
+}
+.fa-facebook:hover{
+    border-radius: 10px;
+    background-color: #c4c1c457;
+}
+.linked{
+    padding: 10px;
+    transform: scale(1);
+    
+  }
+h4{
+    font-size: 20px;
+    color: white;
+    font-family: josefin slab;
+}
+
+.cforname{
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
